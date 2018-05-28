@@ -4,6 +4,8 @@ const AsyncObject = require('@guseyn/cutie').AsyncObject;
 const find = require('find-process');
 const promiseToCallback = require('promise-to-callback');
 
+const notDefinedProcess = {};
+
 // Represented result is process
 class FoundProcessOnPort extends AsyncObject {
 
@@ -18,7 +20,7 @@ class FoundProcessOnPort extends AsyncObject {
   }
 
   onResult(processes) {
-    return processes[0];
+    return processes == null ? notDefinedProcess : processes[0];
   }
 
 }
