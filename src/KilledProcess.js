@@ -6,11 +6,11 @@ const AsyncObject = require('@guseyn/cutie').AsyncObject;
 class KilledProcess extends AsyncObject {
 
   constructor(pid, signal) {
-    super(process, pid, signal);
+    super(pid, signal);
   }
 
   definedSyncCall() {
-    return (process, pid, signal) => {
+    return (pid, signal) => {
       process.kill(pid, signal);
       return process;
     }
