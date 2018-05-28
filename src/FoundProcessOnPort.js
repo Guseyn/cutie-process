@@ -20,7 +20,7 @@ class FoundProcessOnPort extends AsyncObject {
   }
 
   onResult(processes) {
-    return processes == null ? notDefinedProcess : processes[0];
+    return (processes == null || processes.length === 0) ? notDefinedProcess : processes[0];
   }
 
 }
