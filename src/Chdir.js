@@ -11,7 +11,8 @@ class Chdir extends AsyncObject {
 
   definedSyncCall() {
     return (process, dir) => {
-      return process.chdir(dir);
+      process.chdir(dir);
+      return dir;
     }
   }
 

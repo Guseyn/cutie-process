@@ -2,7 +2,7 @@
 
 const AsyncObject = require('@guseyn/cutie').AsyncObject;
 
-// Represented result is object
+// Represented result is number
 class Euid extends AsyncObject {
 
   constructor(process) {

@@ -6,7 +6,7 @@ const AsyncObject = require('@guseyn/cutie').AsyncObject;
 class NextTick extends AsyncObject {
 
   constructor(process, callback, ...args) {
-    super(process);
+    super(process, callback, ...args);
   }
 
   definedSyncCall() {

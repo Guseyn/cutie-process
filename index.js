@@ -9,6 +9,7 @@ module.exports = {
   Config: require('./src/Config'),
   CpuUsage: require('./src/CpuUsage'),
   Cwd: require('./src/Cwd'),
+  DebugPort: require('./src/DebugPort'),
   DisconnectedProcess: require('./src/DisconnectedProcess'),
   Egid: require('./src/Egid'),
   Env: require('./src/Env'),
