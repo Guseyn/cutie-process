@@ -3,7 +3,7 @@
 const AsyncObject = require('@guseyn/cutie').AsyncObject;
 
 // Represented result is number
-class ExitCode extends AsyncObject {
+class DebugPort extends AsyncObject {
 
   constructor(process) {
     super(process);
@@ -11,11 +11,10 @@ class ExitCode extends AsyncObject {
 
   definedSyncCall() {
     return (process) => {
-      console.log(process.exitCode);
-      return process.exitCode;
+      return process.debugPort;
     }
   }
 
 }
 
-module.exports = ExitCode;
+module.exports = DebugPort;
