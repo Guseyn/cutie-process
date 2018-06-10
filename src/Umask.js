@@ -11,7 +11,7 @@ class Umask extends AsyncObject {
 
   definedSyncCall() {
     return (process, mask) => {
-      return process.umask;
+      return process.umask(mask);
     }
   }
 

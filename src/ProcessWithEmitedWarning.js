@@ -11,7 +11,8 @@ class ProcessWithEmitedWarning extends AsyncObject {
 
   definedSyncCall() {
     return (process, warning, options) => {
-      return process.emitWarning(warning, options);
+      process.emitWarning(warning, options);
+      return process;
     }
   }
 
