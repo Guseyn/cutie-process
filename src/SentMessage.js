@@ -2,7 +2,7 @@
 
 const AsyncObject = require('@guseyn/cutie').AsyncObject;
 
-// Represented result is void
+// Represented result is string
 class SentMessage extends AsyncObject {
 
   constructor(process, message, sendHandle, options) {
@@ -11,8 +11,13 @@ class SentMessage extends AsyncObject {
 
   definedAsyncCall() {
     return (process, message, sendHandle, options, callback) => {
-      return process.sendMessage(message, sendHandle, options, callback);
+      this.message = message;
+      return process.send(message, sendHandle, options, callback);
     }
+  }
+
+  onResult() {
+    return this.message;
   }
 
 }
