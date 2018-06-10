@@ -1,6 +1,6 @@
 {
   "name": "@guseyn/cutie-process",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Cutie extension for process module in Node.",
   "main": "index.js",
   "scripts": {
