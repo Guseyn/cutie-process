@@ -37,7 +37,7 @@ For more information about parameters in the async objects visit [docs of Node](
 | `ExecPath` | `process.execPath` | `process` | `string` |
 | `ExitCode` | `process.exitCode` | `process` | `number` |
 | `ExitedProcess` | `process.exit` | `process, code` | `process` |
-| `FoundProcessOnPort` | `find(from find-process)` | `port` | `first found process or {} if no process on specified port` |
+| `FoundProcessOnPort` | `find(from find-process)` | `port` | `first found process or {} if no process on the specified port` |
 | `Gid` | `process.getgid` | `process` | `number` |
 | `Hrtime` | `process.hrtime` | `process, time` | `number[]` |
 | `IsConnected` | `process.connected` | `process` | `boolean` |
