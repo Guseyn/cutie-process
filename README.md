@@ -61,7 +61,7 @@ For more information about parameters in the async objects visit [docs of Node](
 | `ProcessWithSignalEvent` | `process.on(signal, event)` | `process, signal, event(Event with definedBody())` | `process` |
 | `ProcessWithUid` | `process.setuid` | `process, id` | `process` |
 | `ProcessWithUid` | `process.setuid` | `process, id` | `process` |
-| `ProcessWithUncaughtExceptionEvent` | `process.on('uncaughtException', event)` | `process, event(Event with definedBody(error))` | `` | `process` |
+| `ProcessWithUncaughtExceptionEvent` | `process.on('uncaughtException', event)` | `process, event(Event with definedBody(error))` | `process` |
 | `ProcessWithUnhandledRejectionEvent` | `process.on('unhandledRejection', event)` | `process, event(Event with definedBody(reason, p))` | `process` |
 | `ProcessWithWarningEvent` | `process.on('warning', event)` | `process, event(Event with definedBody(warning))` | `process` |
 | `Release` | `process.release` | `process` | `object` |
