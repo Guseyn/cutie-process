@@ -17,7 +17,7 @@ const {
 ```
 For more information about parameters in the async objects visit [docs of Node](https://nodejs.org/en/docs/) for <b>process</b> module.
 
-| Async Object  | Async/sync call | Parameters | Representation result |
+| Async Object  | Async/sync call | Parameters(default value/description) | Representation result |
 | ------------- | ----------------| ---------- | --------------------- |
 | `AbortedProcess` | `process.abort` | `process` | `process` |
 | `Arch` | `process.arch` | `process` | `string` |
