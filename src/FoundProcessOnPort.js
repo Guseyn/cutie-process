@@ -1,6 +1,6 @@
 'use strict';
 
-const AsyncObject = require('@guseyn/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject;
 const find = require('find-process');
 const promiseToCallback = require('promise-to-callback');
 

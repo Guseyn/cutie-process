@@ -2,10 +2,10 @@
 
 const {
   Assertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   IsUndefined
-} = require('@guseyn/cutie-is');
+} = require('@cuties/is');
 const {
   Channel
 } = require('./../index');

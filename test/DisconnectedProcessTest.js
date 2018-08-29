@@ -5,17 +5,17 @@ const {
 } = require('child_process');
 const {
   as
-} = require('@guseyn/cutie');
+} = require('@cuties/cutie');
 const {
   Assertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   Is
-} = require('@guseyn/cutie-is');
+} = require('@cuties/is');
 const {
   Forked,
   KilledChildProcess
-} = require('@guseyn/cutie-child-process');
+} = require('@cuties/child-process');
 const {
   DisconnectedProcess
 } = require('./../index');
