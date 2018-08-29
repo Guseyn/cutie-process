@@ -3,19 +3,19 @@
 
 const {
   as
-} = require('@guseyn/cutie');
+} = require('@cuties/cutie');
 const {
   ChildProcess
 } = require('child_process');
 const {
   Assertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   IsBoolean
-} = require('@guseyn/cutie-is');
+} = require('@cuties/is');
 const {
   Forked
-} = require('@guseyn/cutie-child-process');
+} = require('@cuties/child-process');
 const {
   IsConnected,
   Pid,
