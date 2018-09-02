@@ -19,7 +19,7 @@
     "@cuties/assert": "1.1.4",
     "@cuties/child-process": "1.0.1",
     "@cuties/is": "1.0.6",
-    "test-executor": "1.0.8",
+    "test-executor": "1.1.0",
     "find-process": "1.1.1",
     "promise-to-callback": "1.0.0"
   },
