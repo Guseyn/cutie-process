@@ -18,6 +18,7 @@ class WarningEvent extends Event {
 
   definedBody(warning) {
     // handle
+    console.log(warning);
   }
 
 }

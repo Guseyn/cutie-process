@@ -1,6 +1,6 @@
 {
   "name": "@cuties/process",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Cutie extension for process module in Node.",
   "main": "index.js",
   "scripts": {
@@ -15,11 +15,11 @@
     "process"
   ],
   "dependencies": {
-    "@cuties/cutie": "1.4.3",
-    "@cuties/assert": "1.1.4",
-    "@cuties/child-process": "1.0.1",
-    "@cuties/is": "1.0.6",
-    "test-executor": "1.1.0",
+    "@cuties/cutie": "1.4.4",
+    "@cuties/assert": "1.1.5",
+    "@cuties/child-process": "1.0.2",
+    "@cuties/is": "1.0.8",
+    "test-executor": "1.1.2",
     "find-process": "1.1.1",
     "promise-to-callback": "1.0.0"
   },
