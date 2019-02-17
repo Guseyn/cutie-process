@@ -64,13 +64,10 @@ For more information about parameters in the async objects visit [docs of Node](
 | `ProcessWithBeforeExitEvent` | `process.on('beforeExit', event)` | `process, event(Event with definedBody(exitCode))` | `process` |
 | `ProcessWithDisconnectEvent` | `process.on('disconnect', event)` | `process, event(Event with definedBody())` | `process` |
 | `ProcessWithEmitedWarning` | `process.emitWarning` | `warning, options` | `process` |
-| `ProcessWithEuid` | `process.seteuid` | `process, id` | `process` |
 | `ProcessWithExitEvent` | `process.on('exit', event)` | `process, event(Event with definedBody(code))` | `process` |
 | `ProcessWithMessageEvent` | `process.on('message', event)` | `process, event(Event with definedBody(message, sendHandle))` | `process` |
 | `ProcessWithRejectionHandledEvent` | `process.on('rejectionHandled', event)` | `process, event(Event with definedBody(p), p - promise)` | `process` |
 | `ProcessWithSignalEvent` | `process.on(signal, event)` | `process, signal, event(Event with definedBody())` | `process` |
-| `ProcessWithUid` | `process.setuid` | `process, id` | `process` |
-| `ProcessWithUid` | `process.setuid` | `process, id` | `process` |
 | `ProcessWithUncaughtExceptionEvent` | `process.on('uncaughtException', event)` | `process, event(Event with definedBody(error))` | `process` |
 | `ProcessWithUnhandledRejectionEvent` | `process.on('unhandledRejection', event)` | `process, event(Event with definedBody(reason, p))` | `process` |
 | `ProcessWithWarningEvent` | `process.on('warning', event)` | `process, event(Event with definedBody(warning))` | `process` |
