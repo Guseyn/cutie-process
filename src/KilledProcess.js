@@ -1,23 +1,21 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
-// Represented result is process
+// Represented result is process as pid
 class KilledProcess extends AsyncObject {
-
-  constructor(pid, signal) {
-    super(pid, signal);
+  constructor (pid, signal) {
+    super(pid, signal)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (pid, signal) => {
       if (pid) {
-        process.kill(pid, signal);
+        process.kill(pid, signal)
       }
-      return process;
+      return pid
     }
   }
-
 }
 
-module.exports = KilledProcess;
+module.exports = KilledProcess

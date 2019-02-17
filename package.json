@@ -4,7 +4,8 @@
   "description": "Cutie extension for process module in Node.",
   "main": "index.js",
   "scripts": {
-    "test": "node test-executor"
+    "test": "node test-executor",
+    "build": "node build"
   },
   "repository": {
     "type": "git",
@@ -15,18 +16,27 @@
     "process"
   ],
   "dependencies": {
-    "@cuties/cutie": "1.4.4",
-    "@cuties/assert": "1.1.5",
-    "@cuties/child-process": "1.0.2",
-    "@cuties/is": "1.0.8",
-    "test-executor": "1.1.2",
+    "@cuties/assert": "^1.1.9",
+    "@cuties/child-process": "^1.0.3",
+    "@cuties/cutie": "^1.6.6",
+    "@cuties/is": "^1.0.12",
+    "@cuties/wall": "^1.0.17",
     "find-process": "1.1.1",
-    "promise-to-callback": "1.0.0"
+    "promise-to-callback": "1.0.0",
+    "test-executor": "^1.1.32"
   },
   "author": "guseyn",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Guseyn/cutie-process/issues"
   },
-  "homepage": "https://github.com/Guseyn/cutie-process#readme"
+  "homepage": "https://github.com/Guseyn/cutie-process#readme",
+  "devDependencies": {
+    "eslint": "^5.14.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
 }

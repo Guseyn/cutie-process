@@ -1,14 +1,28 @@
 # cutie-process
 
-[![NPM Version][npm-image]][npm-url]
+[![NPM Version](https://img.shields.io/npm/v/@cuties/process.svg)](https://npmjs.org/package/@cuties/process)
+[![Build Status](https://travis-ci.org/Guseyn/cutie-process.svg?branch=master)](https://travis-ci.org/Guseyn/cutie-process)
+[![codecov](https://codecov.io/gh/Guseyn/cutie-process/branch/master/graph/badge.svg)](https://codecov.io/gh/Guseyn/cutie-process)
 
 [Cutie](https://github.com/Guseyn/cutie) extension for <b>process</b> module in Node. It's based on the [Async Tree Pattern](https://github.com/Guseyn/async-tree-patern/blob/master/Async_Tree_Patern.pdf).
 
-# Examples
+## Examples
 
 You can find examples of using this library in the [test directory](https://github.com/Guseyn/cutie-process/tree/master/test).
 
-# Usage
+## Install
+
+`npm install @cuties/process`
+
+## Run test
+
+`npm test`
+
+## Run build
+
+`npm run build`
+
+## Usage
 
 ```js
 const {
@@ -19,7 +33,6 @@ For more information about parameters in the async objects visit [docs of Node](
 
 | Async Object  | Async/sync call | Parameters(default value/description) | Representation result |
 | ------------- | ----------------| ---------- | --------------------- |
-| `AbortedProcess` | `process.abort` | `process` | `process` |
 | `Arch` | `process.arch` | `process` | `string` |
 | `Argv` | `process.argv` | `process` | `string[]` |
 | `Argv0` | `process.argv0` | `process` | `string` |
@@ -41,7 +54,7 @@ For more information about parameters in the async objects visit [docs of Node](
 | `Gid` | `process.getgid` | `process` | `number` |
 | `Hrtime` | `process.hrtime` | `process, time` | `number[]` |
 | `IsConnected` | `process.connected` | `process` | `boolean` |
-| `KilledProcess` | `process.kill` | `pid, signal` | `process(global var)` |
+| `KilledProcess` | `process.kill` | `pid, signal` | `process(as pid)` |
 | `MainModule` | `process.mainModule` | `process` | `module` |
 | `MemoryUsage` | `process.memoryUsage` | `process` | `object` |
 | `NextTick` | `process.nextTick` | `process, callback, ...args` | `process` |
@@ -50,12 +63,9 @@ For more information about parameters in the async objects visit [docs of Node](
 | `Platform` | `process.platform` | `process` | `string` |
 | `ProcessWithBeforeExitEvent` | `process.on('beforeExit', event)` | `process, event(Event with definedBody(exitCode))` | `process` |
 | `ProcessWithDisconnectEvent` | `process.on('disconnect', event)` | `process, event(Event with definedBody())` | `process` |
-| `ProcessWithEgid` | `process.setegid` | `process, id` | `process` |
 | `ProcessWithEmitedWarning` | `process.emitWarning` | `warning, options` | `process` |
 | `ProcessWithEuid` | `process.seteuid` | `process, id` | `process` |
 | `ProcessWithExitEvent` | `process.on('exit', event)` | `process, event(Event with definedBody(code))` | `process` |
-| `ProcessWithGid` | `process.setgid` | `process, id` | `process` |
-| `ProcessWithGroups` | `process.setgroups` | `process, groups` | `process` |
 | `ProcessWithMessageEvent` | `process.on('message', event)` | `process, event(Event with definedBody(message, sendHandle))` | `process` |
 | `ProcessWithRejectionHandledEvent` | `process.on('rejectionHandled', event)` | `process, event(Event with definedBody(p), p - promise)` | `process` |
 | `ProcessWithSignalEvent` | `process.on(signal, event)` | `process, signal, event(Event with definedBody())` | `process` |
@@ -77,7 +87,3 @@ For more information about parameters in the async objects visit [docs of Node](
 | `Uptime` | `process.uptime` | `process` | `number` |
 | `Version` | `process.version` | `process` | `string` |
 | `Versions` | `process.versions` | `process` | `object` |
-
-
-[npm-image]: https://img.shields.io/npm/v/@cuties/process.svg
-[npm-url]: https://npmjs.org/package/@cuties/process

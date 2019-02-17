@@ -2,16 +2,16 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsString
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   Argv0
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsString(
     new Argv0(process)
   )
-).call();
+).call()

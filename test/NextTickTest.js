@@ -1,14 +1,14 @@
 'use strict'
 
 const {
-  DeepEqualAssertion
-} = require('@cuties/assert');
+  DeepStrictEqualAssertion
+} = require('@cuties/assert')
 const {
   NextTick
-} = require('./../index');
+} = require('./../index')
 
-new DeepEqualAssertion(
+new DeepStrictEqualAssertion(
   new NextTick(
     process, () => {}
   ), process
-).call();
+).call()

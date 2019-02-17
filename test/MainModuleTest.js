@@ -1,12 +1,12 @@
 'use strict'
 
 const {
-  DeepEqualAssertion
-} = require('@cuties/assert');
+  DeepStrictEqualAssertion
+} = require('@cuties/assert')
 const {
   MainModule
-} = require('./../index');
+} = require('./../index')
 
-new DeepEqualAssertion(
+new DeepStrictEqualAssertion(
   new MainModule(process), module
-).call();
+).call()

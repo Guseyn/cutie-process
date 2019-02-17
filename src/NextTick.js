@@ -1,21 +1,19 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is process
 class NextTick extends AsyncObject {
-
-  constructor(process, callback, ...args) {
-    super(process, callback, ...args);
+  constructor (process, callback, ...args) {
+    super(process, callback, ...args)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (process, callback, ...args) => {
-      process.nextTick(callback, ...args);
-      return process;
+      process.nextTick(callback, ...args)
+      return process
     }
   }
-
 }
 
-module.exports = NextTick;
+module.exports = NextTick

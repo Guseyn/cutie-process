@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is string
 class Version extends AsyncObject {
-
-  constructor(process) {
-    super(process);
+  constructor (process) {
+    super(process)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (process) => {
-      return process.version;
+      return process.version
     }
   }
-
 }
 
-module.exports = Version;
+module.exports = Version

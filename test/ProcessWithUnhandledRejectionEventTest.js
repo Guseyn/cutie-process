@@ -2,28 +2,26 @@
 
 const {
   Event
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
-  DeepEqualAssertion
-} = require('@cuties/assert');
+  DeepStrictEqualAssertion
+} = require('@cuties/assert')
 const {
   ProcessWithUnhandledRejectionEvent
-} = require('./../index');
+} = require('./../index')
 
 class UnhandledRejectionEvent extends Event {
-
-  constructor() {
-    super();
+  constructor () {
+    super()
   }
 
-  definedBody(reason, p) {
+  definedBody (reason, p) {
     // handle
   }
-
 }
 
-new DeepEqualAssertion(
+new DeepStrictEqualAssertion(
   new ProcessWithUnhandledRejectionEvent(
     process, new UnhandledRejectionEvent()
   ), process
-).call();
+).call()

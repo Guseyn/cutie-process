@@ -2,13 +2,13 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsString
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   Title
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsString(
@@ -16,4 +16,4 @@ new Assertion(
       process
     )
   )
-).call();
+).call()

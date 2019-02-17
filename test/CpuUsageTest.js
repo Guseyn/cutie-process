@@ -2,16 +2,16 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsObject
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   CpuUsage
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsObject(
     new CpuUsage(process)
   )
-).call();
+).call()

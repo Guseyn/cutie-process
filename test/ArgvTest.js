@@ -2,16 +2,16 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsArray
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   Argv
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsArray(
     new Argv(process)
   )
-).call();
+).call()

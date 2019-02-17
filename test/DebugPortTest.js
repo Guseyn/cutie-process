@@ -2,16 +2,16 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsNumber
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   DebugPort
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsNumber(
     new DebugPort(process)
   )
-).call();
+).call()

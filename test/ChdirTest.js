@@ -2,16 +2,16 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsString
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   Chdir
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsString(
     new Chdir(process, './test')
   )
-).call();
+).call()

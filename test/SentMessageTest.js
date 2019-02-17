@@ -2,20 +2,20 @@
 
 const {
   as
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsString
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   Forked,
   KilledChildProcess
-} = require('@cuties/child-process');
+} = require('@cuties/child-process')
 const {
   SentMessage
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsString(
@@ -26,4 +26,4 @@ new Assertion(
   )
 ).after(
   new KilledChildProcess(as('cp'))
-).call();
+).call()

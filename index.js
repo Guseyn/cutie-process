@@ -1,6 +1,5 @@
 module.exports = {
 
-  AbortedProcess: require('./src/AbortedProcess'),
   Arch: require('./src/Arch'),
   Argv: require('./src/Argv'),
   Argv0: require('./src/Argv0'),
@@ -32,12 +31,9 @@ module.exports = {
   Ppid: require('./src/Ppid'),
   ProcessWithBeforeExitEvent: require('./src/ProcessWithBeforeExitEvent'),
   ProcessWithDisconnectEvent: require('./src/ProcessWithDisconnectEvent'),
-  ProcessWithEgid: require('./src/ProcessWithEgid'),
   ProcessWithEmitedWarning: require('./src/ProcessWithEmitedWarning'),
   ProcessWithEuid: require('./src/ProcessWithEuid'),
   ProcessWithExitEvent: require('./src/ProcessWithExitEvent'),
-  ProcessWithGid: require('./src/ProcessWithGid'),
-  ProcessWithGroups: require('./src/ProcessWithGroups'),
   ProcessWithMessageEvent: require('./src/ProcessWithMessageEvent'),
   ProcessWithRejectionHandledEvent: require('./src/ProcessWithRejectionHandledEvent'),
   ProcessWithSignalEvent: require('./src/ProcessWithSignalEvent'),

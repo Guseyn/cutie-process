@@ -1,21 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is process
 class ExitedProcess extends AsyncObject {
-
-  constructor(process, code) {
-    super(process, code);
+  constructor (process, code) {
+    super(process, code)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (process, code) => {
-      process.exit(code);
-      return process;
+      process.exit(code)
     }
   }
-
 }
 
-module.exports = ExitedProcess;
+module.exports = ExitedProcess

@@ -2,16 +2,16 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsObject
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   ExecArgv
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsObject(
     new ExecArgv(process)
   )
-).call();
+).call()
