@@ -1,16 +1,16 @@
 'use strict'
 
 const {
-  DeepEqualAssertion
-} = require('@cuties/assert');
+  DeepStrictEqualAssertion
+} = require('@cuties/assert')
 const {
   ProcessWithUid
-} = require('./../index');
+} = require('./../index')
 
 try {
-  new DeepEqualAssertion(
+  new DeepStrictEqualAssertion(
     new ProcessWithUid(process, 501), process
-  ).call();
+  ).call()
 } catch (err) {
-  console.log('This function is only available on POSIX platforms (i.e. not Windows or Android).');
+  console.log('This function is only available on POSIX platforms (i.e. not Windows or Android).')
 }

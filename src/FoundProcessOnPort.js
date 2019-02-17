@@ -1,28 +1,26 @@
-'use strict';
+'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
-const find = require('find-process');
-const promiseToCallback = require('promise-to-callback');
+const AsyncObject = require('@cuties/cutie').AsyncObject
+const find = require('find-process')
+const promiseToCallback = require('promise-to-callback')
 
-const notDefinedProcess = {};
+const notDefinedProcess = {}
 
 // Represented result is process
 class FoundProcessOnPort extends AsyncObject {
-
-  constructor(port) {
-    super(port);
+  constructor (port) {
+    super(port)
   }
 
-  definedAsyncCall() {
+  definedAsyncCall () {
     return (port, callback) => {
-      promiseToCallback(find('port', port))(callback);
+      promiseToCallback(find('port', port))(callback)
     }
   }
 
-  onResult(processes) {
-    return (processes == null || processes.length === 0) ? notDefinedProcess : processes[0];
+  onResult (processes) {
+    return (processes == null || processes.length === 0) ? notDefinedProcess : processes[0]
   }
-
 }
 
-module.exports = FoundProcessOnPort;
+module.exports = FoundProcessOnPort

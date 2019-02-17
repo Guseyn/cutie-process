@@ -2,16 +2,16 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsUndefined
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   Channel
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsUndefined(
     new Channel(process)
   )
-).call();
+).call()

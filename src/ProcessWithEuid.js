@@ -1,21 +1,19 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is process
 class ProcessWithEuid extends AsyncObject {
-
-  constructor(process, id) {
-    super(process, id);
+  constructor (process, id) {
+    super(process, id)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (process, id) => {
-      process.seteuid(id);
-      return process;
+      process.seteuid(id)
+      return process
     }
   }
-
 }
 
-module.exports = ProcessWithEuid;
+module.exports = ProcessWithEuid

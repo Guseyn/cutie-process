@@ -2,19 +2,19 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsBoolean
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   ThrowDeprecation
-} = require('./../index');
+} = require('./../index')
 
-// does not work...
+process.throwDeprecation = false
 new Assertion(
   new IsBoolean(
     new ThrowDeprecation(
       process
     )
   )
-)//.call();
+).call()

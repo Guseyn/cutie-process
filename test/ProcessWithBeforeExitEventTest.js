@@ -2,26 +2,24 @@
 
 const {
   Event
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
-  DeepEqualAssertion
-} = require('@cuties/assert');
+  DeepStrictEqualAssertion
+} = require('@cuties/assert')
 const {
   ProcessWithBeforeExitEvent
-} = require('./../index');
+} = require('./../index')
 
 class BeforeExitEvent extends Event {
-
-  constructor() {
-    super();
+  constructor () {
+    super()
   }
 
-  definedBody(exitCode) {
+  definedBody (exitCode) {
     // handle
   }
-
 }
 
-new DeepEqualAssertion(
+new DeepStrictEqualAssertion(
   new ProcessWithBeforeExitEvent(process, new BeforeExitEvent()), process
-).call();
+).call()

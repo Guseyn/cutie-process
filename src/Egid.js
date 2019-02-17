@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is number
 class Egid extends AsyncObject {
-
-  constructor(process) {
-    super(process);
+  constructor (process) {
+    super(process)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (process) => {
-      return process.getegid();
+      return process.getegid()
     }
   }
-
 }
 
-module.exports = Egid;
+module.exports = Egid

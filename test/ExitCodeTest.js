@@ -1,20 +1,30 @@
 'use strict'
 
 const {
-  Assertion
-} = require('@cuties/assert');
+  Event
+} = require('@cuties/cutie')
 const {
-  IsNumber
-} = require('@cuties/is');
+  StrictEqualAssertion
+} = require('@cuties/assert')
 const {
   ExitCode,
-  ExitedProcess
-} = require('./../index');
+  ExitedProcess,
+  ProcessWithExitEvent
+} = require('./../index')
 
-new Assertion(
-  new IsNumber(
-    new ExitCode(
-      new ExitedProcess(process)
-    )
-  )
-).call();
+class ExitEvent extends Event {
+  constructor () {
+    super()
+  }
+
+  definedBody (code) {
+    process.exitCode = 0
+    new StrictEqualAssertion(
+      new ExitCode(process), code
+    ).call()
+  }
+}
+
+new ExitedProcess(
+  new ProcessWithExitEvent(process, new ExitEvent())
+).call()

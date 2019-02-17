@@ -2,16 +2,16 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsObject
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   Env
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsObject(
     new Env(process)
   )
-).call();
+).call()

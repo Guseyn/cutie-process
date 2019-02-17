@@ -2,14 +2,13 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsNumber
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
-  Gid,
-  ExitedProcess
-} = require('./../index');
+  Gid
+} = require('./../index')
 
 new Assertion(
   new IsNumber(
@@ -17,4 +16,4 @@ new Assertion(
       process
     )
   )
-).call();
+).call()

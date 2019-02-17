@@ -2,26 +2,24 @@
 
 const {
   Event
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
-  DeepEqualAssertion
-} = require('@cuties/assert');
+  DeepStrictEqualAssertion
+} = require('@cuties/assert')
 const {
   ProcessWithDisconnectEvent
-} = require('./../index');
+} = require('./../index')
 
 class DisconnectEvent extends Event {
-
-  constructor() {
-    super();
+  constructor () {
+    super()
   }
 
-  definedBody() {
+  definedBody () {
     // handle
   }
-
 }
 
-new DeepEqualAssertion(
+new DeepStrictEqualAssertion(
   new ProcessWithDisconnectEvent(process, new DisconnectEvent()), process
-).call();
+).call()

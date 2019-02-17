@@ -1,12 +1,12 @@
 'use strict'
 
 const {
-  DeepEqualAssertion
-} = require('@cuties/assert');
+  DeepStrictEqualAssertion
+} = require('@cuties/assert')
 const {
   ProcessWithEmitedWarning
-} = require('./../index');
+} = require('./../index')
 
-new DeepEqualAssertion(
+new DeepStrictEqualAssertion(
   new ProcessWithEmitedWarning(process, 'warning'), process
-)//.call(); TODO: fix it
+).call() // TODO: fix it

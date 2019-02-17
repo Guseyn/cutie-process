@@ -2,16 +2,16 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsNumber
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   Euid
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsNumber(
     new Euid(process)
   )
-).call();
+).call()

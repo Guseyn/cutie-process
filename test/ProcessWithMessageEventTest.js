@@ -2,26 +2,24 @@
 
 const {
   Event
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
-  DeepEqualAssertion
-} = require('@cuties/assert');
+  DeepStrictEqualAssertion
+} = require('@cuties/assert')
 const {
   ProcessWithMessageEvent
-} = require('./../index');
+} = require('./../index')
 
 class MessageEvent extends Event {
-
-  constructor() {
-    super();
+  constructor () {
+    super()
   }
 
-  definedBody(message) {
+  definedBody (message) {
     // handle
   }
-
 }
 
-new DeepEqualAssertion(
+new DeepStrictEqualAssertion(
   new ProcessWithMessageEvent(process, new MessageEvent()), process
-).call();
+).call()

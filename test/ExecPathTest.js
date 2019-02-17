@@ -2,16 +2,16 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   IsString
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   ExecPath
-} = require('./../index');
+} = require('./../index')
 
 new Assertion(
   new IsString(
     new ExecPath(process)
   )
-).call();
+).call()

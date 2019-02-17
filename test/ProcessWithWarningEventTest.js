@@ -2,29 +2,27 @@
 
 const {
   Event
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
-  DeepEqualAssertion
-} = require('@cuties/assert');
+  DeepStrictEqualAssertion
+} = require('@cuties/assert')
 const {
   ProcessWithWarningEvent
-} = require('./../index');
+} = require('./../index')
 
 class WarningEvent extends Event {
-
-  constructor() {
-    super();
+  constructor () {
+    super()
   }
 
-  definedBody(warning) {
+  definedBody (warning) {
     // handle
-    console.log(warning);
+    console.log(warning)
   }
-
 }
 
-new DeepEqualAssertion(
+new DeepStrictEqualAssertion(
   new ProcessWithWarningEvent(
     process, new WarningEvent()
   ), process
-).call();
+).call()
