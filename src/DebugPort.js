@@ -8,7 +8,7 @@ class DebugPort extends AsyncObject {
     super(process)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process) => {
       return process.debugPort
     }

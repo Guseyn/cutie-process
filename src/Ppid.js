@@ -8,7 +8,7 @@ class Ppid extends AsyncObject {
     super(process)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process) => {
       return process.ppid
     }

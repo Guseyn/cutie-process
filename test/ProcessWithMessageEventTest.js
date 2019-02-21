@@ -15,7 +15,7 @@ class MessageEvent extends Event {
     super()
   }
 
-  definedBody (message) {
+  body (message) {
     // handle
   }
 }

@@ -8,8 +8,8 @@ class ProcessWithMessageEvent extends AsyncObject {
     super(process, event)
   }
 
-  // event is an Event with definedBody(message, sendHandle)
-  definedSyncCall () {
+  // event is an Event with body(message, sendHandle)
+  syncCall () {
     return (process, event) => {
       process.on('message', event)
       return process

@@ -16,14 +16,14 @@
     "process"
   ],
   "dependencies": {
-    "@cuties/assert": "^1.1.11",
-    "@cuties/child-process": "^1.0.5",
-    "@cuties/cutie": "^1.6.8",
-    "@cuties/is": "^1.0.14",
-    "@cuties/wall": "^1.0.19",
+    "@cuties/assert": "^1.2.0",
+    "@cuties/child-process": "^1.1.0",
+    "@cuties/cutie": "^1.7.0",
+    "@cuties/is": "^1.1.0",
+    "@cuties/wall": "^1.1.0",
     "find-process": "1.1.1",
     "promise-to-callback": "1.0.0",
-    "test-executor": "^1.1.34"
+    "test-executor": "^1.2.0"
   },
   "author": "guseyn",
   "license": "MIT",

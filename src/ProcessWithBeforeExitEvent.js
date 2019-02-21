@@ -8,8 +8,8 @@ class ProcessWithBeforeExitEvent extends AsyncObject {
     super(process, event)
   }
 
-  // event is an Event with definedBody(exitCode)
-  definedSyncCall () {
+  // event is an Event with body(exitCode)
+  syncCall () {
     return (process, event) => {
       process.on('beforeExit', event)
       return process

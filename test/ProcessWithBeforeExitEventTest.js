@@ -15,7 +15,7 @@ class BeforeExitEvent extends Event {
     super()
   }
 
-  definedBody (exitCode) {
+  body (exitCode) {
     // handle
   }
 }

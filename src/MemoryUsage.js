@@ -8,7 +8,7 @@ class MemoryUsage extends AsyncObject {
     super(process)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process) => {
       return process.memoryUsage()
     }

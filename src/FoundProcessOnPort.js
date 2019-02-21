@@ -12,7 +12,7 @@ class FoundProcessOnPort extends AsyncObject {
     super(port)
   }
 
-  definedAsyncCall () {
+  asyncCall () {
     return (port, callback) => {
       promiseToCallback(find('port', port))(callback)
     }

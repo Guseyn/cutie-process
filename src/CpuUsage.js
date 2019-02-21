@@ -8,7 +8,7 @@ class CpuUsage extends AsyncObject {
     super(process, previousValue)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process, previousValue) => {
       return process.cpuUsage(previousValue)
     }

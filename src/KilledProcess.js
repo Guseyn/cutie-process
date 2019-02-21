@@ -8,7 +8,7 @@ class KilledProcess extends AsyncObject {
     super(pid, signal)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (pid, signal) => {
       if (pid) {
         process.kill(pid, signal)

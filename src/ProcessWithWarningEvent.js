@@ -8,8 +8,8 @@ class ProcessWithWarningEvent extends AsyncObject {
     super(process, event)
   }
 
-  // event is an Event with definedBody(warning)
-  definedSyncCall () {
+  // event is an Event with body(warning)
+  syncCall () {
     return (process, event) => {
       process.on('warning', event)
       return process

@@ -8,7 +8,7 @@ class Argv0 extends AsyncObject {
     super(process)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process) => {
       return process.argv0
     }

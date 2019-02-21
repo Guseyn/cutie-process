@@ -15,7 +15,7 @@ class UncaughtExceptionEvent extends Event {
     super()
   }
 
-  definedBody (/* error */) {
+  body (/* error */) {
     // handle
   }
 }

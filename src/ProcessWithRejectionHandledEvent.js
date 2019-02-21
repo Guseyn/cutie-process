@@ -8,8 +8,8 @@ class ProcessWithRejectionHandledEvent extends AsyncObject {
     super(process, event)
   }
 
-  // event is an Event with definedBody(p), p - promise
-  definedSyncCall () {
+  // event is an Event with body(p), p - promise
+  syncCall () {
     return (process, event) => {
       process.on('rejectionHandled', event)
       return process

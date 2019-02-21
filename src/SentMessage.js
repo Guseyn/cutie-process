@@ -8,7 +8,7 @@ class SentMessage extends AsyncObject {
     super(process, message, sendHandle, options)
   }
 
-  definedAsyncCall () {
+  asyncCall () {
     return (process, message, sendHandle, options, callback) => {
       this.message = message
       return process.send(message, sendHandle, options, callback)

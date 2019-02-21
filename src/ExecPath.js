@@ -8,7 +8,7 @@ class ExecPath extends AsyncObject {
     super(process)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process) => {
       return process.execPath
     }

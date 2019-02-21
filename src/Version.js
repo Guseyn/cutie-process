@@ -8,7 +8,7 @@ class Version extends AsyncObject {
     super(process)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process) => {
       return process.version
     }

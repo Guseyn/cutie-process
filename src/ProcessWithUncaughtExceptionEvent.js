@@ -8,8 +8,8 @@ class ProcessWithUncaughtExceptionEvent extends AsyncObject {
     super(process, event)
   }
 
-  // event is an Event with definedBody(error)
-  definedSyncCall () {
+  // event is an Event with body(error)
+  syncCall () {
     return (process, event) => {
       process.on('uncaughtException', event)
       return process

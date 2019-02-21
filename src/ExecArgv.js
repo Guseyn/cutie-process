@@ -8,7 +8,7 @@ class ExecArgv extends AsyncObject {
     super(process)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process) => {
       return process.execArgv
     }

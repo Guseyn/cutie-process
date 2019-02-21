@@ -15,7 +15,7 @@ class RejectionHandledEvent extends Event {
     super()
   }
 
-  definedBody (p) {
+  body (p) {
     // handle
   }
 }

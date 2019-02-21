@@ -8,7 +8,7 @@ class Hrtime extends AsyncObject {
     super(process, time)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process, time) => {
       return process.hrtime(time)
     }
