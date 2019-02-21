@@ -8,7 +8,7 @@ class NextTick extends AsyncObject {
     super(process, callback, ...args)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process, callback, ...args) => {
       process.nextTick(callback, ...args)
       return process

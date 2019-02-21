@@ -15,7 +15,7 @@ class SignalEvent extends Event {
     super()
   }
 
-  definedBody () {
+  body () {
     // handle
   }
 }

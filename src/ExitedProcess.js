@@ -8,7 +8,7 @@ class ExitedProcess extends AsyncObject {
     super(process, code)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process, code) => {
       process.exit(code)
     }

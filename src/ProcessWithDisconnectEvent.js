@@ -8,8 +8,8 @@ class ProcessWithDisconnectEvent extends AsyncObject {
     super(process, event)
   }
 
-  // event is an Event with definedBody()
-  definedSyncCall () {
+  // event is an Event with body()
+  syncCall () {
     return (process, event) => {
       process.on('disconnect', event)
       return process

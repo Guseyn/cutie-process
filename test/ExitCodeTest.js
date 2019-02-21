@@ -17,7 +17,7 @@ class ExitEvent extends Event {
     super()
   }
 
-  definedBody (code) {
+  body (code) {
     process.exitCode = 0
     new StrictEqualAssertion(
       new ExitCode(process), code

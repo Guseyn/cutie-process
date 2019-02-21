@@ -15,7 +15,7 @@ class UnhandledRejectionEvent extends Event {
     super()
   }
 
-  definedBody (reason, p) {
+  body (reason, p) {
     // handle
   }
 }

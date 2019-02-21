@@ -15,7 +15,7 @@ class WarningEvent extends Event {
     super()
   }
 
-  definedBody (warning) {
+  body (warning) {
     // handle
     console.log(warning)
   }

@@ -8,7 +8,7 @@ class Platform extends AsyncObject {
     super(process)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process) => {
       return process.platform
     }

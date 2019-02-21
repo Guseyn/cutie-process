@@ -8,8 +8,8 @@ class ProcessWithUnhandledRejectionEvent extends AsyncObject {
     super(process, event)
   }
 
-  // event is an Event with definedBody(reason, p)
-  definedSyncCall () {
+  // event is an Event with body(reason, p)
+  syncCall () {
     return (process, event) => {
       process.on('unhandledRejection', event)
       return process

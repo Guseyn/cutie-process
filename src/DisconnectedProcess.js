@@ -8,7 +8,7 @@ class DisconnectedProcess extends AsyncObject {
     super(process)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process) => {
       process.disconnect()
       return process

@@ -15,7 +15,7 @@ class DisconnectEvent extends Event {
     super()
   }
 
-  definedBody () {
+  body () {
     // handle
   }
 }

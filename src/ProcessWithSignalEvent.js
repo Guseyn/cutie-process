@@ -8,8 +8,8 @@ class ProcessWithSignalEvent extends AsyncObject {
     super(process, signal, event)
   }
 
-  // event is an Event with definedBody()
-  definedSyncCall () {
+  // event is an Event with body()
+  syncCall () {
     return (process, signal, event) => {
       process.on(signal, event)
       return process

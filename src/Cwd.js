@@ -8,7 +8,7 @@ class Cwd extends AsyncObject {
     super(process)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (process) => {
       return process.cwd()
     }
